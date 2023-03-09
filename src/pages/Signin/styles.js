@@ -5,8 +5,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px
-  height: 100vh
+  gap: 10px;
+  height: 50vh;
 `;
 
 export const Content = styled.div`
@@ -16,7 +16,7 @@ export const Content = styled.div`
   flex-direction: column;
   gap: 15px;
   width: 100%;
-  box-shadow: 0 1px 2px #0003
+  box-shadow: 0 1px 2px #0003;
   background-color: white;
   max-width: 350px;
   padding: 20px;
@@ -32,7 +32,7 @@ export const Label = styled.label`
 
 export const LabelSignup = styled.label`
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: #676767;
 `;
 
@@ -43,9 +43,11 @@ export const labelError = styled.label`
 
 export const Strong = styled.strong`
   cursor poninter;
+  font-weight: 600;
+  letter-spacing: 1px;
 
   a {
     text-decoration: none;
-    color: #676767
+    color: #8cc63f
   }
 `;

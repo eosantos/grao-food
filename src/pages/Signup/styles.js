@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  height: 100vh;
+  height: 60vh;
 `;
 
 export const Content = styled.div`
@@ -40,10 +40,12 @@ export const labelError = styled.label`
 `;
 
 export const Strong = styled.strong`
-  cursor: pointer;
+  cursor poninter;
+  font-weight: 600;
+  letter-spacing: 1px;
 
   a {
     text-decoration: none;
-    color: #676767;
+    color: #8cc63f
   }
 `;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
+import Logo from "../../components/Logo";
 import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
@@ -31,7 +32,7 @@ const Signin = () => {
 
   return (
     <C.Container>
-      <C.Label>SISTEMA DE LOGIN</C.Label>
+      <Logo />
       <C.Content>
         <Input
           type="email"
@@ -45,12 +46,14 @@ const Signin = () => {
           value={senha}
           onChange={(e) => [setSenha(e.target.value), setError("")]}
         />
-        <C.labelError>{error}</C.labelError>
         <Button Text="Entrar" onClick={handleLogin} />
+        <C.labelError>{error}</C.labelError>
         <C.LabelSignup>
           Não tem uma conta?
           <C.Strong>
-            <Link to="/signup">&nbsp;Registre-se</Link>
+            <Link to="/signup">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registre-se
+            </Link>
           </C.Strong>
         </C.LabelSignup>
       </C.Content>
