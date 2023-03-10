@@ -8,7 +8,9 @@ import * as C from "./styles";
 const header = () => {
   return (
     <C.Header>
-      <DehazeIcon />
+      <C.divIcon>
+        <DehazeIcon />
+      </C.divIcon>
       <C.div>
         <div>
           <C.label>Olá Fred, você está neste endereço?</C.label>

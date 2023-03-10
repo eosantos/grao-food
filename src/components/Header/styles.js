@@ -4,7 +4,7 @@ export const Header = styled.div`
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   top: 0;
   z-index: 100;
   width: 100vw;
@@ -14,6 +14,10 @@ export const Header = styled.div`
   -webkit-box-shadow: 0px 9px 7px -6px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0px 9px 7px -6px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 9px 7px -6px rgba(0, 0, 0, 0.16);
+`;
+
+export const divIcon = styled.div`
+  margin-left: 30px;
 `;
 
 export const label = styled.label`
@@ -31,11 +35,6 @@ export const label = styled.label`
     margin-top: 9px;
   }
 `;
-
-// export const label2 = styled.label2`
-//   font-size: 14px;
-//   color: ;
-// `;
 
 export const div = styled.div`
   padding: 20px;
