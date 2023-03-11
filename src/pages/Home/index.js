@@ -28,6 +28,9 @@ const Home = () => {
         description="Descrição do Card"
       />
       <C.Title>Home</C.Title>
+      <Button Text="Products" onClick={() => [navigate("/products")]}>
+        Products
+      </Button>
       <Button Text="Sair" onClick={() => [signout(), navigate("/")]}>
         Sair
       </Button>
