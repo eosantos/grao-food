@@ -18,6 +18,7 @@ export const Header = styled.div`
 
 export const divIcon = styled.div`
   margin-left: 30px;
+  color: #8cc63f;
 `;
 
 export const label = styled.label`

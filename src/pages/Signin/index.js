@@ -5,6 +5,7 @@ import Logo from "../../components/Logo";
 import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import FullScreenImage from "../../components/FullScreenImage";
 
 const Signin = () => {
   const { signin } = useAuth();
@@ -32,6 +33,7 @@ const Signin = () => {
 
   return (
     <C.Container>
+      <FullScreenImage />
       <Logo />
       <C.Content>
         <Input

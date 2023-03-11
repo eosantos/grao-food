@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import Logo from "../../components/Logo";
+import FullScreenImage from "../../components/FullScreenImage";
 import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
@@ -37,6 +38,7 @@ const Signup = () => {
 
   return (
     <C.Container>
+      <FullScreenImage />
       <Logo />
       <C.Content>
         <Input
@@ -62,7 +64,7 @@ const Signup = () => {
         <C.LabelSignin>
           Já tem uma conta?
           <C.Strong>
-            <Link to="/">&nbsp;Entre</Link>
+            <Link to="/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entre</Link>
           </C.Strong>
         </C.LabelSignin>
       </C.Content>

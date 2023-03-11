@@ -10,16 +10,15 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
+  gap: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 15px;
   width: 100%;
   box-shadow: 0 1px 2px #0003;
-  background-color: white;
   max-width: 350px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
 `;
 
@@ -33,7 +32,7 @@ export const Label = styled.label`
 export const LabelSignup = styled.label`
   font-size: 16px;
   font-weight: 500;
-  color: #676767;
+  color: #ffffff;
 `;
 
 export const labelError = styled.label`
