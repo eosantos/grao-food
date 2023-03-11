@@ -37,12 +37,12 @@ export const Avatar = styled.img`
 `;
 
 export const Title = styled.strong`
-  font-size: 16px;
+  font-size: 20px;
   margin: 0 100px 50px 15px;
   font-wight: 400;
 
   p {
-    font-size: 12px;
+    font-size: 14px;
     font-wight: 100;
     margin-top: 3px;
   }
@@ -51,16 +51,16 @@ export const Title = styled.strong`
 export const Icons = styled.div`
   display: flex;
   position: absolute;
-  margin: 240px 0px 220px 40px;
+  margin: 240px 0px 220px 80px;
   mix-blend-mode: normal;
-  height: 15px;
-  widht: 15px;
-  font-size: 12px;
+  height: 10px;
+  font-size: 8px;
   color: #8cc63f;
 
   strong {
     display: flex;
     font-size: 12px;
+    margin: 5px 5px 0px 5px;
     font-wight: 400;
     color: #000000;
   }
