@@ -5,7 +5,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 125vh;
+  gap: 20px;
+`;
+
+export const CardRestaurant = styled.div`
   gap: 20px;
 `;
 

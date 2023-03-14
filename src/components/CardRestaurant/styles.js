@@ -7,6 +7,7 @@ export const CardContainer = styled.div`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+  margin-bottom: 20px;
 `;
 
 export const Image = styled.img`
@@ -37,8 +38,9 @@ export const Avatar = styled.img`
 `;
 
 export const Title = styled.strong`
+  width: 160px !important;
   font-size: 20px;
-  margin: 0 100px 50px 15px;
+  margin: 0 50px 50px 15px;
   font-wight: 400;
 
   p {

@@ -19,13 +19,11 @@ const Home = () => {
     // Execute a busca com o termo de pesquisa
     console.log(`Buscando por: ${searchTerm}`);
     const teste = restaurants.filter(
-      (restaurant) => restaurant.restaurante === searchTerm
+      (restaurant) => restaurant.name === searchTerm
     );
     console.log(teste);
     setData(
-      restaurants.filter((restaurant) =>
-        restaurant.restaurante.includes(searchTerm)
-      )
+      restaurants.filter((restaurant) => restaurant.name.includes(searchTerm))
     );
   };
 

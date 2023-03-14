@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 import * as C from "./styles";
 
-const CardRestaurant = ({ restaurants, redirectProduct }) => {
+const CardRestaurant = ({ restaurants }) => {
   const navigate = useNavigate();
   console.log(restaurants);
   return (
@@ -21,17 +21,16 @@ const CardRestaurant = ({ restaurants, redirectProduct }) => {
             <C.Description>
               <C.Avatar src={data.avatar} alt="Avatar do autor" />
               <C.Title>
-                <strong>{data.restaurante}</strong>
+                <strong>{data.name}</strong>
                 <p>{data.description}</p>
               </C.Title>
-
               <C.Icons>
                 <StarPurple500OutlinedIcon />
-                <strong>4,0</strong>
+                <strong>{data.stars}</strong>
                 <QueryBuilderOutlinedIcon />
-                <strong>30 - 40min</strong>
+                <strong>{data.deliveryTime}</strong>
                 <PaidIcon />
-                <strong>R$ 7,99</strong>
+                <strong>{data.deliveryPrice}</strong>
               </C.Icons>
             </C.Description>
           </C.CardContainer>
