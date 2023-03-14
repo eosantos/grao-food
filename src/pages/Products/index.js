@@ -7,7 +7,7 @@ import ProductCard from "../../components/ProductCard";
 
 import * as C from "./styles";
 
-const Products = () => {
+const Products = ({ products }) => {
   const navigate = useNavigate();
 
   return (
@@ -20,7 +20,9 @@ const Products = () => {
         title="Strogonof"
         description="Carne, Arroz, Feijão, Batata Frita"
         price="R$ 18,99"
+        products={products}
       />
+
       <h4>Bebidas</h4>
       <ProductCard
         imageUrl="https://riomarrecife.com.br/recife/2019/09/CIA-142.jpg"
