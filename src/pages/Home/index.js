@@ -18,10 +18,10 @@ const Home = () => {
   const handleSearch = (searchTerm) => {
     // Execute a busca com o termo de pesquisa
     console.log(`Buscando por: ${searchTerm}`);
-    const teste = restaurants.filter(
+    const search = restaurants.filter(
       (restaurant) => restaurant.name === searchTerm
     );
-    console.log(teste);
+    console.log(search);
     setData(
       restaurants.filter((restaurant) => restaurant.name.includes(searchTerm))
     );
@@ -29,7 +29,7 @@ const Home = () => {
 
   const redirectProduct = (e) => {
     console.log(e);
-    navigate("/products");
+    navigate("/products.id");
   };
 
   if (data.length === 0) {
@@ -45,10 +45,10 @@ const Home = () => {
         title="Título do Card"
         description="Descrição do Card"
         restaurants={data}
-        onClick={() => [navigate("/products")]}
+        onClick={() => [redirectProduct("/products.id")]}
       />
 
-      <C.Title>Home</C.Title>
+      {/* <C.Title>Home</C.Title>
       <Button
         Text="Products"
         onClick={() => {
@@ -56,7 +56,7 @@ const Home = () => {
         }}
       >
         Products
-      </Button>
+      </Button> */}
       <Button Text="Sair" onClick={() => [signout(), navigate("/")]}>
         Sair
       </Button>
